@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 type PropsListItem = {
-  tastCompleted: boolean,
+  taskCompleted: boolean,
 };
 
 export const ListItem = styled.li<PropsListItem>`
@@ -11,9 +11,9 @@ export const ListItem = styled.li<PropsListItem>`
   justify-content: space-between;
   border-bottom: 1px solid ${(props) => props.theme.colors.borderColor};
   background-color: ${(props) => props.theme.colors.primary};
-  text-decoration: ${(props) => (props.tastCompleted ? 'line-through' : 'none')};
-  color: ${(props) => (props.tastCompleted
-    ? props.theme.colors.secundaryText : props.theme.colors.primaryText)};
+  text-decoration: ${(props) => (props.taskCompleted ? 'line-through' : 'none')};
+  color: ${(props) => (props.taskCompleted
+    ? props.theme.colors.secondaryText : props.theme.colors.primaryText)};
 
   &:first-of-type {
     margin-top: 16px;

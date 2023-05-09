@@ -5,7 +5,7 @@ import { Task } from './types';
 import ViewTasks from './components/view-tasks/ViewTasks';
 import ListTasks from './components/list-tasks/ListTasks';
 import dark from './styles/themes/dark';
-import ligh from './styles/themes/ligth';
+import light from './styles/themes/light';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <ThemeProvider theme={ isDarkTheme ? dark : ligh }>
+      <ThemeProvider theme={ isDarkTheme ? dark : light }>
         <GlobalStyles />
         <Routes>
           <Route
