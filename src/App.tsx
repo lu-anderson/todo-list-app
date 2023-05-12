@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Task } from './types';
-import ViewTasks from './components/view-tasks/ViewTasks';
-import ListTasks from './components/list-tasks/ListTasks';
+import ViewTasks from './components/view-tasks/view-tasks';
+import ListTasks from './components/list-tasks/list-tasks';
 import dark from './styles/themes/dark';
 import light from './styles/themes/light';
-import GlobalStyles from './styles/GlobalStyles';
+import GlobalStyles from './styles/global-styles';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);

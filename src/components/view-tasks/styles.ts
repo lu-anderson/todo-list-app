@@ -61,7 +61,7 @@ export const Footer = styled.footer`
 export const CounterTasksToLeft = styled.span`
   border-radius: 0 0 0 4px;
   padding: 16px;
-  color: ${(props) => props.theme.colors.secundaryText};
+  color: ${(props) => props.theme.colors.secondaryText};
   background-color: ${(props) => props.theme.colors.primary};
   grid-area: counter;
   text-align: left;
@@ -75,14 +75,14 @@ export const ClearCompleted = styled(CounterTasksToLeft)`
   button {
     border: none;
     padding: 0;
-    color: ${(props) => props.theme.colors.secundaryText};
+    color: ${(props) => props.theme.colors.secondaryText};
     background-color: ${(props) => props.theme.colors.primary};
   }
 `;
 
 export const FilterTasks = styled.div`
   padding: 16px;
-  color: ${(props) => props.theme.colors.secundaryText};
+  color: ${(props) => props.theme.colors.secondaryText};
   border-radius: 4px;
   text-align: center;
   background-color: ${(props) => props.theme.colors.primary};
@@ -93,7 +93,7 @@ export const FilterTasks = styled.div`
   }
 
   span > a {
-    color: ${(props) => props.theme.colors.secundaryText};
+    color: ${(props) => props.theme.colors.secondaryText};
     text-decoration: none;
   }
 `;

@@ -1,5 +1,5 @@
 import { Task as TaskType } from '../../types';
-import Task from '../task/Task';
+import Task from '../task/task';
 
 type Props = {
   tasks: TaskType[],
@@ -8,24 +8,14 @@ type Props = {
 };
 
 function ListTasks({ tasks, toggleStatusTask, deleteTask }: Props) {
-  const checkOrderInList = (index: number, listLength: number) => {
-    if (!index) {
-      return 'first';
-    } if (index === listLength - 1) {
-      return 'last';
-    }
-    return 'middle';
-  };
-
   return (
     <ul>
-      {tasks.map((task, index) => (
+      {tasks.map((task) => (
         <Task
           key={ task.id }
           task={ task }
           toggleStatusTask={ toggleStatusTask }
           deleteTask={ deleteTask }
-          orderInList={ checkOrderInList(index, tasks.length) }
         />
       ))}
     </ul>
