@@ -36,6 +36,7 @@ export const Title = styled.h1`
 export const ButtonTheme = styled.button`
   border: none;
   background: none;
+  cursor: pointer;
 `;
 
 export const InputTask = styled.input`
@@ -77,6 +78,7 @@ export const ClearCompleted = styled(CounterTasksToLeft)`
     padding: 0;
     color: ${(props) => props.theme.colors.secondaryText};
     background-color: ${(props) => props.theme.colors.primary};
+    cursor: pointer;
   }
 `;
 

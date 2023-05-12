@@ -26,6 +26,7 @@ export const Checkbox = styled.input`
 `;
 
 export const LabelCheckbox = styled.label`  
+  cursor: pointer;
   &:before {
     content: '';
     width: 16px;
@@ -51,4 +52,5 @@ export const ButtonRemove = styled.button`
   border: none;
   background: none;
   margin-bottom: 2px;
+  cursor: pointer;
 `;
