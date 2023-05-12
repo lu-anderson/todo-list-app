@@ -21,7 +21,7 @@ function Task({
   deleteTask,
 }: Props) {
   return (
-    <ListItem tastCompleted={ task.completed }>
+    <ListItem taskCompleted={ task.completed }>
       <Checkbox
         id={ task.id }
         type="checkbox"

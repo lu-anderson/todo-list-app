@@ -9,7 +9,7 @@ import ligh from './styles/themes/ligth';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [allTasks, setAllTasks] = useState<Task[]>([]);
   const completedTasks = allTasks.filter((task) => task.completed);
   const activeTasks = allTasks.filter((task) => !task.completed);
